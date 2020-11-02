@@ -19,12 +19,12 @@ def getter(fname):
 listy = getter('../music2.csv')
 
 count = dict()
-genres = ['Pop','Hip-Hop','Rock','Dance','Country','Electronic','Alternative','Soundtrack','Other']
+genres = ['Pop','Rap & Hip-Hop','Rock','Dance','Country','Electronic','Alternative','Soundtrack','Other']
 
 for x in genres:
 	count[x]=0
 
-num = -1
+num = -2
 for i,rw in enumerate(listy):
 	if(i==0):
 		pass
