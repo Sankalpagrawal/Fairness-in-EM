@@ -58,7 +58,7 @@ print(labeled[0])
 # for x in labeled:
 # 	print(x[-2])
 
-updatecsv('../music_labeled_data.csv',labeled)
+# updatecsv('../music_labeled_data.csv',labeled)
 # genre2 = getter('../music2.csv',-1)
 
 # print(len(genre1),len(genre2))
