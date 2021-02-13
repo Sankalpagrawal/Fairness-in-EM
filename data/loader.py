@@ -44,17 +44,16 @@ print(new_fin)
 s=0
 for i,li in enumerate(listy):
 	for l in listy:
+		new_fin.append(listy[i].copy())
+		new_fin[-1].extend(l.copy())
 		# print(li,l)
 
 		if(check(li[2],l[2])):
-			new_fin.append(listy[i].copy())
-			new_fin[-1].extend(l.copy())
 			new_fin[-1].append(1)
 			s+=1
 		else:
-			pass
 			new_fin[-1].append(0)
-
+			
 
 print(s)
 updatecsv("labeled_1_res_data.csv",new_fin)
