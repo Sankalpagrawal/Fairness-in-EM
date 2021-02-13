@@ -31,7 +31,7 @@ colA = ["address","city","id","name","phone","type"]
 
 
 new_fin = []
-newl = []
+newl = ["_id"]
 for x in colA:
 	newl.append("ltable."+x)
 for x in colA:
@@ -41,19 +41,21 @@ newl.append("label")
 new_fin.append(newl) 
 
 print(new_fin)
-s=0
+s=1
 for i,li in enumerate(listy):
 	for l in listy:
-		new_fin.append(listy[i].copy())
+		
+		new_fin.append([s]+listy[i].copy())
 		new_fin[-1].extend(l.copy())
 		# print(li,l)
 
 		if(check(li[2],l[2])):
 			new_fin[-1].append(1)
-			s+=1
 		else:
 			new_fin[-1].append(0)
-			
+		
+		s+=1
+
 
 print(s)
-updatecsv("labeled_1_res_data.csv",new_fin)
+updatecsv("labeled_res_data.csv",new_fin)
