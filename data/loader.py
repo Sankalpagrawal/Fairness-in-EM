@@ -59,3 +59,4 @@ for i,li in enumerate(listy):
 
 print(s)
 updatecsv("labeled_res_data.csv",new_fin)
+#local
